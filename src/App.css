@@ -1,38 +1,140 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: 'relative';
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: #202124;
+}
+
+.App h1{
+  width: 50%;
+  margin: 20vh auto 24px auto;
+  text-align: center;
+  font-size: xx-large;
+  color: whitesmoke;
+}
+
+.App .searchContainer{
+  position: relative;
+  display: flex;
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.App .searchContainer textarea{
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  padding: 12px 12px 12px 24px;
+  border: none;
+  background-color: #6f757a;
+  border-radius: 20px;
+  z-index: 10;
+  resize: none;
+  text-align: left;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: whitesmoke;
+  font-size: medium;
+  font-weight: lighter;
 }
 
-.App-link {
-  color: #61dafb;
+.App .searchContainer textarea:focus{
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .selectOptions{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  padding-top: 72px;
+  background-color: #6f757a;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.App .selectOptions li{
+  margin: 12px 0 0 12px;
+  text-decoration: none;
+  list-style: none;
+  color: whitesmoke;
+  cursor: pointer    ;
+}
+
+.App .selectOptions::before{
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 90%;
+  background-color: whitesmoke;
+  z-index: 3;
+}
+
+.App .results{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 32px auto 10px auto;
+  padding: 0 15% 20px 15%;
+  display: flex;
+  border-top: 1px solid #3C4043;
+  z-index: 0;
+  text-align: left;
+}
+
+.App .results h3{
+  margin: 20px;
+  font-size: medium;
+  color: #979fa9;
+}
+
+.App .results span{
+  position: relative;
+  display: flex;
+  color: whitesmoke;
+  font-size: large;
+}
+
+.App footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #1e1d1d;
+}
+
+.App footer span{
+  color: #979fa9;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.App footer .top{
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  border-bottom: 1px solid #3C4043;
+}
+
+.App footer .bottom{
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
 }
