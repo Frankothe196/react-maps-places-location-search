@@ -70,7 +70,7 @@ function App() {
                   {
                     results.map((item,index)=>{
                       if(index>10){
-                        return
+                        return("")
                       }
                       return(<li onClick={()=>{setSelected({title:`${item.country}, ${item.city}`, lat: item.lat, lng: item.lng})}}>{item.country}, {item.city}</li>)
                     })
@@ -97,7 +97,7 @@ function App() {
           <span>Places Simple Recreation</span>
         </div>
         <div className='bottom'>
-          <span>This app openlayers and uses the `free tier` City Data sourced from <a href='https://simplemaps.com' target="_blank">simplemaps.com</a> it contains 41k entries. </span>
+          <span>This app openlayers and uses the `free tier` City Data sourced from <a href='https://simplemaps.com' target="_blank" rel="noreferrer">simplemaps.com</a> it contains 41k entries. </span>
          </div>
       </footer>
     </main>
