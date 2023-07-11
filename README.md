@@ -9,3 +9,4 @@ NB: This is a crude but very simple way to work with data. In production I would
   alt="Alt text"
   title="map places search app screenshot"
   style="display: inline-block; margin: 0 auto; max-width: 80%"/>
+    
