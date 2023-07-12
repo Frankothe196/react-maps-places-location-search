@@ -12,6 +12,7 @@
   height: 100vh;
   width: 100vw;
   background: #202124;
+  overflow: hidden;
 }
 
 .App h1{
@@ -115,6 +116,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   background: #1e1d1d;
@@ -136,7 +138,19 @@
 .App footer .bottom{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: auto;
   padding: 12px;
+}
+
+.App footer .bottom span{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.App footer .bottom span a{
+  margin-left: 4px;
 }
 
 .App .map {

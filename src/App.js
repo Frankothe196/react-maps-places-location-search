@@ -59,7 +59,7 @@ function App() {
 
   return (
     <main className="App">
-      <h1>Maps Place Recreation with Auto Complete</h1>
+      <h1>Maps Place Search Recreation with Auto Complete</h1>
       <section className='searchContainer'>
         <textarea rows={1} onChange={(e)=>setSearch(e.target.value)}></textarea>
         {search&&!selected&&
@@ -97,7 +97,7 @@ function App() {
           <span>Places Simple Recreation</span>
         </div>
         <div className='bottom'>
-          <span>This app openlayers and uses the `free tier` City Data sourced from <a href='https://simplemaps.com' target="_blank" rel="noreferrer">simplemaps.com</a> it contains 41k entries. </span>
+          <span>This app uses openlayers and the `free tier` City Data sourced from <a href='https://simplemaps.com' target="_blank" rel="noreferrer">simplemaps.com</a> which contains 41k entries. </span>
          </div>
       </footer>
     </main>
