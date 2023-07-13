@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-maps-places-location-search/static/css/main.31c3daa9.css",
-    "main.js": "/react-maps-places-location-search/static/js/main.67bc9700.js",
+    "main.js": "/react-maps-places-location-search/static/js/main.3771c1a8.js",
     "index.html": "/react-maps-places-location-search/index.html",
     "main.31c3daa9.css.map": "/react-maps-places-location-search/static/css/main.31c3daa9.css.map",
-    "main.67bc9700.js.map": "/react-maps-places-location-search/static/js/main.67bc9700.js.map"
+    "main.3771c1a8.js.map": "/react-maps-places-location-search/static/js/main.3771c1a8.js.map"
   },
   "entrypoints": [
     "static/css/main.31c3daa9.css",
-    "static/js/main.67bc9700.js"
+    "static/js/main.3771c1a8.js"
   ]
 }
