@@ -26,7 +26,7 @@ function App() {
       // Check if the item contains the substring, use all lowercase to allow for case insensitive search
       return JSON.stringify(item).toLowerCase().includes(target.toLowerCase());
     });
-    return(filteredData)
+    return(filteredData.slice(0,9))
   }
 
   useEffect(()=>{
@@ -69,9 +69,6 @@ function App() {
                 <>
                   {
                     results.map((item,index)=>{
-                      if(index>10){
-                        return("")
-                      }
                       return(<li onClick={()=>{setSelected({title:`${item.country}, ${item.city}`, lat: item.lat, lng: item.lng})}}>{item.country}, {item.city}</li>)
                     })
                   }
